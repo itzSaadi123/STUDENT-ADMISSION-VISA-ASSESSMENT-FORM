@@ -70,7 +70,6 @@
 <div class="form-container">
     <div class="logo-container"><img src="logo.png" alt="NorthGate Logo" onerror="this.src='logo.webp'"></div>
     <div class="header">
-       
         <p><strong>STUDENT ADMISSION & VISA ASSESSMENT FORM</strong></p>
     </div>
 
@@ -83,7 +82,8 @@
             <div class="input-group"><label>Father’s / Husband’s Name *</label><input type="text" name="father_name" required></div>
             <div class="input-group"><label>Date of Birth *</label><input type="date" name="dob" required></div>
             <div class="input-group"><label>CNIC / Passport No *</label><input type="text" name="passport" required></div>
-            <div class="input-group"><label>WhatsApp Number *</label><input type="text" name="contact" required></div>
+            <!-- label changed to Contact Number here -->
+            <div class="input-group"><label>Contact Number *</label><input type="text" name="contact" required></div>
             <div class="input-group"><label>Email Address *</label><input type="email" name="email_id" required></div>
         </div>
 
@@ -105,11 +105,11 @@
             <div class="input-group"><label>English Test Score (IELTS / Duolingo / TOEFL)</label><input type="text" name="english_score" placeholder="e.g. IELTS 6.5 Bands / Not Given Yet"></div>
         </div>
 
-        <!-- SECTION 3: Desired Study Preference (Hasan's Points fully highlighted) -->
+        <!-- SECTION 3: Desired Study Preference -->
         <div class="section-title">🏛️ Desired Study Plans & Preferences</div>
         <div class="grid">
-            <div class="input-group"><label> Intended Country to Apply *</label><input type="text" name=" Intended_country" placeholder="e.g. Canada, Italy, UK, USA" required></div>
-            <div class="input-group"><label> Intended City / Province *</label><input type="text" name=" Intended_city" placeholder="e.g. Toronto, Milan, Berlin" required></div>
+            <div class="input-group"><label>Intended Country to Apply *</label><input type="text" name="intended_country" placeholder="e.g. Canada, Italy, UK, USA" required></div>
+            <div class="input-group"><label>Intended City / Province *</label><input type="text" name="intended_city" placeholder="e.g. Toronto, Milan, Berlin" required></div>
             <div class="input-group"><label>Field of Study / Course Interest *</label><input type="text" name="field_of_study" placeholder="e.g. Computer Science, MBA, Engineering" required></div>
             <div class="input-group"><label>Preferred University Name *</label><input type="text" name="university_name" placeholder="e.g. University of Toronto, Politecnico di Milano" required></div>
         </div>
@@ -131,7 +131,7 @@
             <div class="input-group full-width"><label>Current Monthly Family Income / Financial Sponsor Status *</label><input type="text" name="financial_status" placeholder="e.g. Father sponsoring, Approx 5 Lakhs/Month" required></div>
         </div>
 
-        <!-- SECTION 5: Refusals History (Hasan's Core Points) -->
+        <!-- SECTION 5: Refusals History -->
         <div class="section-title">🛡️ Refusals & Academic History</div>
         <div class="grid">
             <div class="input-group">
@@ -208,13 +208,13 @@
             document.getElementById('thankYouModal').style.display = 'block';
             form.reset();
             btn.disabled = false;
-            btn.innerHTML = "SUBMIT STUDENT APPLICATION";
+            btn.innerHTML = "SUBMIT APPLICATION";
         })
         .catch(error => {
             console.error('Error!', error.message);
             alert("Submission failed. Please check your Script URL.");
             btn.disabled = false;
-            btn.innerHTML = "SUBMIT STUDENT APPLICATION";
+            btn.innerHTML = "SUBMIT APPLICATION";
         });
     });
 </script>

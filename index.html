@@ -75,19 +75,16 @@
 
     <form id="studentForm">
         
-        <!-- SECTION 1: Personal Details -->
         <div class="section-title">👤 Personal Details</div>
         <div class="grid">
             <div class="input-group"><label>Full Name (as per Passport) *</label><input type="text" name="full_name" required></div>
             <div class="input-group"><label>Father’s / Husband’s Name *</label><input type="text" name="father_name" required></div>
             <div class="input-group"><label>Date of Birth *</label><input type="date" name="dob" required></div>
             <div class="input-group"><label>CNIC / Passport No *</label><input type="text" name="passport" required></div>
-            <!-- label changed to Contact Number here -->
             <div class="input-group"><label>Contact Number *</label><input type="text" name="contact" required></div>
             <div class="input-group"><label>Email Address *</label><input type="email" name="email_id" required></div>
         </div>
 
-        <!-- SECTION 2: Academic Details -->
         <div class="section-title">🎓 Academic Background</div>
         <div class="grid">
             <div class="input-group">
@@ -105,7 +102,6 @@
             <div class="input-group"><label>English Test Score (IELTS / Duolingo / TOEFL)</label><input type="text" name="english_score" placeholder="e.g. IELTS 6.5 Bands / Not Given Yet"></div>
         </div>
 
-        <!-- SECTION 3: Desired Study Preference -->
         <div class="section-title">🏛️ Desired Study Plans & Preferences</div>
         <div class="grid">
             <div class="input-group"><label>Intended Country to Apply *</label><input type="text" name="intended_country" placeholder="e.g. Canada, Italy, UK, USA" required></div>
@@ -114,7 +110,6 @@
             <div class="input-group"><label>Preferred University Name *</label><input type="text" name="university_name" placeholder="e.g. University of Toronto, Politecnico di Milano" required></div>
         </div>
 
-        <!-- SECTION 4: Travel & Financial History -->
         <div class="section-title">🌍 Travel & Financial History</div>
         <div class="grid">
             <div class="input-group">
@@ -131,7 +126,6 @@
             <div class="input-group full-width"><label>Current Monthly Family Income / Financial Sponsor Status *</label><input type="text" name="financial_status" placeholder="e.g. Father sponsoring, Approx 5 Lakhs/Month" required></div>
         </div>
 
-        <!-- SECTION 5: Refusals History -->
         <div class="section-title">🛡️ Refusals & Academic History</div>
         <div class="grid">
             <div class="input-group">
@@ -168,7 +162,6 @@
     </form>
 </div>
 
-<!-- SUCCESS MODAL -->
 <div id="thankYouModal" class="modal-overlay">
     <div class="modal-box">
         <div class="success-icon">✔</div>
@@ -179,7 +172,8 @@
 </div>
 
 <script>
-    const scriptURL = 'https:HXEEZwk_24HwN2dwe0CUiGes9a1jl9cxtZyP3Sw/exec'; 
+    // New Web App Extension link added here
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby5XvlfDL9hlpJ174N4uSx-pvWnInxauoIxw9eVLhYgmUqDt2_Arimd0EbRbHT8UejK/exec'; 
     const form = document.getElementById('studentForm');
     const btn = document.getElementById('submitBtn');
 
